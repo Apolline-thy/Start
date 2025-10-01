@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+
+@theme inline {
+  --font-mono: "Inconsolata", monospace;
+  --color-bg: var();
+  --color-pink: var(--clr-fg-left);
+  --color-button-yellow: var(--clr-accent);
+  --color-text: var(--clr-gris-400);
+  --color-button-blue: var(--clr-button);
+}
+@layer base {
+  :root{  
+--clr-white: oklch(1 0 0);
+--clr-fg: hsl(214.3,94.6%,92.7%);
+--clr-bg:hsl(325.7,77.8%,94.7%);
+
+--clr-fg-left:hsl(327.3,73.3%,97.1%) ;
+--clr-button: hsl(191.8,39%,48.8%);
+--clr-hover: hsl(176.1,69.4%,21.8%);
+--clr-accent: hsl(47.9,95.8%,53.1%);
+--clr-accent-foncé: hsl(40.6,96.1%,40.4%);
+--clr-gris-300:hsl(215,27.9%,16.9%);
+--clr-gris-400:hsl(220,8.9%,46.1%);
+}
+};
+

@@ -5,7 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hellooo world!</h1>
+  <body class="flex flex-row items-center justify-center p-50 font-mono">
+    <section class="bg-pink p-20">
+      <h2 class="justify-center text-center">Individual Plan</h2>
+      <hr />
+      <h1 class="p-4 text-center text-4xl font-bold text-shadow-pink-200">
+        $9.99 <span class="text-xs">/mo</span>
+      </h1>
+      <ul class="text-md">
+        <li class="flex-rows flex">
+          <img class="bg- w-1/6" src="./public/assets/check.svg" />Use on up to
+          2 devices
+        </li>
+        <li class="flex-rows flex">
+          <img class="w-1/6" src="./public/assets/check.svg" />10G free cloud
+          storage
+        </li>
+        <li class="flex-rows flex">
+          <img
+            class="bg-button-blue w-1/6 rounded-full"
+            src="./public/assets/check.svg"
+          />No adds while listening
+        </li>
+      </ul>
+    </section>
+    <section class="bg-white pl-20">
+      <button class="bg-button-yellow p-2 -translate-y-35">Payment Info</button>
+      <div class="flex flex-row gap-4">
+        <form>
+          <label class="text-text">Card number</label>
+          <input
+            class="border-border w-full border border-1 p-2"
+            type="text"
+            placeholder="1234 1234 1234 1234"
+          />
+        </form>
+        <form>
+          <label class="text-text">CVV</label>
+          <input
+            class="border-border w-full border border-1 p-2"
+            type="text"
+            placeholder="299"
+          />
+        </form>
+      </div>
+
+      <div class="flex flex-row">
+        <form class="">
+          <label class="text-text">Name on card</label>
+          <input
+            class="border-border w-full border border-1 p-2 text-black "
+            type="text"
+            placeholder="JENNIFER"
+          />
+        </form>
+        <form>
+          <label class="text-text">MM</label>
+          <input
+            class="border-border w-full border border-1 p-2 text-black"
+            type="text"
+            placeholder=""
+          />
+        </form>
+        <form>
+          <label class="text-text">YY</label>
+          <input
+            class="border-border w-full border border-1 p-2 text-black"
+            type="text"
+            placeholder=""
+          />
+        </form>
+      </div>
+      <button class="bg-button-blue text-white rounded-full p-2 translate-y-8">PLACE ORDER</button>
+    </section>
   </body>
 </html>
+
+<!-- collectui.com -->
