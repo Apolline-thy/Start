@@ -5,78 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body class="flex flex-row items-center justify-center p-50 font-mono">
-    <section class="bg-pink p-20">
+  <body
+    class="flex flex-row items-center justify-center bg-[linear-gradient(to_bottom,var(--color-bg),var(--color-fg))] p-50 font-mono"
+  >
+    <section class="bg-pink relative flex h-100 w-90 flex-col p-8 pt-20">
       <h2 class="justify-center text-center">Individual Plan</h2>
       <hr />
-      <h1 class="p-4 text-center text-4xl font-bold text-shadow-pink-200">
+      <h1 class="p-4 text-center text-5xl font-bold text-shadow-pink-200">
         $9.99 <span class="text-xs">/mo</span>
       </h1>
+      <img
+        class="absolute bottom-1 left-2 w-5 rounded-full bg-pink-500"
+        src="./public/assets/back.svg"
+      />
       <ul class="text-md">
-        <li class="flex-rows flex">
-          <img class="bg- w-1/6" src="./public/assets/check.svg" />Use on up to
-          2 devices
-        </li>
-        <li class="flex-rows flex">
-          <img class="w-1/6" src="./public/assets/check.svg" />10G free cloud
-          storage
-        </li>
-        <li class="flex-rows flex">
+        <li class="flex-rows flex gap-2">
           <img
-            class="bg-button-blue w-1/6 rounded-full"
+            class="bg-button-blue h-3 w-3 rounded-full"
+            src="./public/assets/check.svg"
+          />Use on up to 2 devices
+        </li>
+        <li class="flex-rows flex gap-2">
+          <img
+            class="bg-button-blue h-3 w-3 rounded-full"
+            src="./public/assets/check.svg"
+          />10G free cloud storage
+        </li>
+        <li class="flex-rows flex gap-2">
+          <img
+            class="bg-button-blue h-3 w-3 items-center rounded-full"
             src="./public/assets/check.svg"
           />No adds while listening
         </li>
       </ul>
     </section>
-    <section class="bg-white pl-20">
-      <button class="bg-button-yellow p-2 -translate-y-35">Payment Info</button>
+    <section class="h-100 bg-white p-20">
+      <button class="bg-button-yellow w-50 -translate-y-25 p-2">
+        Payment Info
+      </button>
+
+      <!-- Première ligne -->
       <div class="flex flex-row gap-4">
-        <form>
+        <form class="flex flex-col">
           <label class="text-text">Card number</label>
           <input
             class="border-border w-full border border-1 p-2"
             type="text"
-            placeholder="1234 1234 1234 1234"
+            placeholder=""
           />
         </form>
-        <form>
+        <form class="flex flex-col">
           <label class="text-text">CVV</label>
           <input
-            class="border-border w-full border border-1 p-2"
+            class="border-border w-20 border border-1 p-2 hover:border-blue-500"
             type="text"
-            placeholder="299"
+            placeholder=""
           />
         </form>
       </div>
 
-      <div class="flex flex-row">
-        <form class="">
+      <!-- Deuxième ligne -->
+      <div class="flex flex-row items-start gap-4">
+        <form class="flex flex-1 flex-col">
           <label class="text-text">Name on card</label>
           <input
-            class="border-border w-full border border-1 p-2 text-black "
+            class="border-border w-full border border-1 p-2 text-black"
             type="text"
-            placeholder="JENNIFER"
+            placeholder=""
           />
         </form>
-        <form>
+        <form class="flex flex-col">
           <label class="text-text">MM</label>
           <input
-            class="border-border w-full border border-1 p-2 text-black"
+            class="border-border w-10 border border-1 p-2 text-black"
             type="text"
-            placeholder=""
           />
         </form>
-        <form>
+        <form class="flex flex-col">
           <label class="text-text">YY</label>
-          <input
-            class="border-border w-full border border-1 p-2 text-black"
-            type="text"
-            placeholder=""
-          />
+          <input class="w-10 border border-1 p-2 text-black" type="text" />
         </form>
       </div>
-      <button class="bg-button-blue text-white rounded-full p-2 translate-y-8">PLACE ORDER</button>
+
+      <button
+        class="bg-button-blue text-md w-50 translate-y-8 items-center rounded-full p-2 text-white"
+      >
+        PLACE ORDER
+      </button>
     </section>
   </body>
 </html>
